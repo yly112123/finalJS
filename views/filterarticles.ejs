@@ -1,0 +1,6 @@
+<%- include('header') %>
+<% articles.forEach(function (article) { %>
+    <%- include('article_content', { article: article }) %>
+  <% }) %>
+<%- include('floating') %>
+<%- include('footer') %>

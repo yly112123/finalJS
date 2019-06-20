@@ -1,0 +1,183 @@
+/* body {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+a:hover {
+  border-bottom: 3px solid #4fc08d;
+}
+
+.button {
+  background-color: #4fc08d !important;
+  color: #fff !important;
+}
+
+.avatar {
+  border-radius: 3px;
+  width: 48px;
+  height: 48px;
+  float: right;
+} */
+
+/* ---------- nav ---------- */
+
+/* .nav {
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+}
+
+.nav h1 {
+  color: #4fc08d;
+  display: inline-block;
+  margin: 10px 0;
+} */
+
+/* ---------- nav-setting ---------- */
+
+/* .nav-setting {
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 999;
+}
+
+.nav-setting .ui.dropdown.button {
+  padding: 10px 10px 0 10px;
+  background-color: #fff !important;
+}
+
+.nav-setting .icon.bars {
+  color: #000;
+  font-size: 18px;
+} */
+
+/* ---------- post-content ---------- */
+
+/* .post-content h3 a {
+  color: #4fc08d !important;
+}
+
+.post-content .tag {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #999;
+}
+
+.post-content .tag.right {
+  float: right;
+  margin-right: 0;
+}
+
+.post-content .tag.right a {
+  color: #999;
+} */
+* {margin:0; padding:0; font-size:12px;font-family: 微软雅黑}
+
+body{
+	background-image: url("./images/black.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 800px;
+}
+
+button{
+	display: inline-block;
+    width: 90%;
+    height: 41px;
+    border-radius: 4px;
+    background: #5f1e85;
+    border: none;
+    cursor: pointer;
+    border-bottom: 3px solid #5f1e85;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: center;
+    outline: none;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+}
+
+.main{
+	background-color: #eeeeee;
+	filter: alpha(opacity=90) ;
+	-moz-opacity: 0.9;
+	opacity: 0.8;
+	position: absolute;
+	float: left;
+	margin: auto;
+}
+
+#ranking_button {
+	width: 100px;
+	height: 40px;
+	position:absolute;
+	top:70px;
+	right:150px;   
+	z-index:9999;
+	}
+	
+#ranking{
+	position:absolute;
+	top:120px;
+	right:150px;   
+}
+
+#options{
+	width: 20%;
+	height: 500px;
+	margin: 100px auto auto 100px;
+}
+
+#gameArea{
+	width: 500px;
+	height: 500px;
+	margin: 100px auto auto 450px;
+}
+
+#options table{
+	color: #000000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 90%;
+	height: 80%;
+	margin: auto;
+}
+
+#gameArea table{
+	border:solid #000000; 
+	border-width:1px 0px 0px 1px;
+	font-weight: bold;
+}
+
+#gameArea table tr td{
+	border:solid #000000; 
+	border-width:0px 1px 1px 0px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #c4c2c7;
+}
+
+#gameArea table tr td.clicked{
+
+	background-color: #ffffff;
+}
+
+#gameArea table tr td span.blue{
+	color: blue;
+}
+
+#gameArea table tr td span.orange{
+	color: orange;
+}
+
+#gameArea table tr td span.red{
+	color: red;
+}

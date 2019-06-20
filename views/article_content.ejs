@@ -1,0 +1,42 @@
+<div class="article-content">
+  <div class="ui grid">
+    <div class="four wide column">
+      <a class="avatar avatar-link" href="/articles?author=<%= article.author._id %>">
+        <img class="avatar" src="/images/<%= article.author.avatar %>" style="width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        float: right;">
+      </a>
+    </div>
+
+    <div class="eight wide column">
+      <div class="ui segment">
+        <h3><a href="/articles/<%= article._id %>"><%= article.title %></a></h3>
+        <pre><%- article.content %></pre>
+        <div>
+          <span class="tag"><%= article.created_at %></span>
+          <span class="tag right">
+            <span>浏览(<%= article.pv || 0 %>) </span>
+            <span>留言(<%= article.commentsnum || 0 %>)</span>
+
+            <% if (user && article.author._id && user._id.toString() === article.author._id.toString()) { %>
+              <div class="ui inline dropdown">
+                <div class="text"></div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item"><a href="/articles/<%= article._id %>/edit">编辑</a></div>
+                  <div class="item"><a href="/articles/<%= article._id %>/delete">删除</a></div>
+                </div>
+              </div>
+            <% } %>
+
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!doctype html>
+<script src="/javascripts/chapter/15_game.js"></script>
+<script src="/javascripts/game_levels.js"></script>
+<script src="/javascripts/chapter/16_canvas.js"></script>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mario</title>
+ 
+  <style>
+   button:hover {
+    cursor: pointer;
+   }
+  </style>
+ </head>
+
+<body>
+  <script>
+    runGame(GAME_LEVELS, CanvasDisplay);
+  </script>
+   游戏总时长：<input id="time" type="text" size="5px" value="1" />分钟 </br>
+   倒计时：<span id="djs"></span>  秒 </br>
+   <button id="start">开始游戏</button>
+   <button id="zt">暂停游戏</button>
+   <button id="stop">停止游戏</button>
+</body>

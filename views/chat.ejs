@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>聊天室</title>
+	<link type="text/css" rel="stylesheet" href="stylesheets/chat.css">
+	<script type="text/javascript" src="javascripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/socket.io.js"></script>
+	<script type="text/javascript" src="javascripts/chat.js"></script>
+</head>
+<body>
+	<div class="chat-wrap">
+        <h1>聊天室</h1>
+        <input type="text" style="display:none" value="<%=user.name %>" id="name" />
+        <input type="text" style="display:none" value="<%=user.avatar %>" id="avatar" />
+		<div class="chat-con clearfix"></div>
+		<div class="bottom">
+			<input type="text" id="sendtxt">
+			<button class="sendBtn">发送</button>
+        </div>
+        
+    </div>
+    <div id="users_online">
+        <div id="user_label">在线用户</div>
+            <div class="users_list"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="nav-setting" style="position: fixed;right: 30px;top: 35px;z-index: 999;">
+  <div class="ui buttons">
+    <div class="ui floating dropdown button" style="padding: 10px 10px 0 10px;background-color: #fff !important;">
+      <i class="icon bars" style="color: #000;font-size: 18px;"></i>
+      <div class="menu" style="z-index: 99999;">
+        <% if (user) { %>
+          <a class="item" href="/articles?author=<%= user._id %>">个人主页</a>
+          <div class="divider"></div>
+          <a class="item" href="/articles">blog主页</a>
+          <a class="item" href="/articles/create">发表文章</a>
+          <a class="item" href="/signout">退出</a>
+          <a class="item" href="/rankList">排行榜</a>
+          <a class="item" href="/chat">聊天</a>
+        <% } else { %>
+          <a class="item" href="/signin">登录</a>
+          <a class="item" href="/signup">注册</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>

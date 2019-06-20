@@ -1,0 +1,5 @@
+<%- include('header') %>
+<% users.forEach(function (user) { %>
+    <%- include('userscore', { user: user }) %>
+  <% }) %>
+<%- include('footer') %>

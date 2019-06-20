@@ -1,0 +1,37 @@
+<%- include('header') %>
+<div class="ui grid" style="text-align: center">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+    <form class="ui form segment" method="post" enctype="multipart/form-data" >
+      <div class="field required">
+        <label>关键词</label>
+        <input placeholder="关键词" type="text" name="proname">
+      </div>
+      <input type="submit" class="ui button fluid" value="查询">
+    </form>
+    </div>
+  </div>
+
+
+<% articles.forEach(function (article) { %>
+  <%- include('article_content', { article: article }) %>
+<% }) %>
+<div class="a-page" style="text-align: center" >
+    <span>
+        <% if (page <= 1){%>
+          <span>没有上一页</span><%}else{%>
+    <a href="/articles?page=<%=page-1 %>">上一页</a><%}%>
+    </span>
+    <% if (pages > 0){ %>
+    <span class="a-pageInfo">
+          <%=page%>/<%=pages %>
+        </span>
+    <span>
+      <%}%>
+        <% if  (page >= pages) {%>
+          <span>没有下一页</span><%}else{%>
+    <a href="articles?page=<%=page+1 %>">下一页</a><%}%>
+    </span>
+</div>
+<%- include('floating') %>
+<%- include('footer') %>
